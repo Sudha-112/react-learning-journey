@@ -7,9 +7,8 @@ function useCurrencyInfo(currency){
         fetch(`https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@latest/v1/currencies/${currency}.json`)  // api call
         .then((res) => res.json())
         .then((resjson) => setData(resjson[currency]))
-        console.log(data);
-       
-     }, [currency])
+      
+       }, [currency])
 
      console.log(data);
      return data;
